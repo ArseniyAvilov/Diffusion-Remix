@@ -13,8 +13,6 @@ def parse_args():
 
     parser.add_argument('content_img', type=Path, help='Path to content image')
     parser.add_argument('style_img', type=Path, help='Path to style image')
-    parser.add_argument('--device', type=torch.device, default=torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu'),
-                        help='Which device to use ("cpu", "cuda", "cuda:1", ...)')
     parser.add_argument('save_dir', type=Path, nargs='?', default=Path('.'),
                         help='Path to dir where to save remixes')
 
@@ -23,18 +21,19 @@ def parse_args():
 
 def main():
     args = parse_args()
-    print('Using device:', args.device)
+    device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
+    print('Using device:', device)
 
     if torch.cuda.is_available():
         pipe = StableRemix.from_pretrained(
             "stabilityai/stable-diffusion-2-1-unclip", torch_dtype=torch.float16, variation="fp16"
         )
-        pipe = pipe.to(args.device)
+        pipe = pipe.to(device)
         pipe.enable_xformers_memory_efficient_attention()
     else:
         pipe = StableRemix.from_pretrained(
             "stabilityai/stable-diffusion-2-1-unclip")
-        pipe = pipe.to(args.device)
+        pipe = pipe.to(device)
 
     content_img = Image.open(args.content_img).convert('RGB')
     style_img = Image.open(args.style_img).convert('RGB')
