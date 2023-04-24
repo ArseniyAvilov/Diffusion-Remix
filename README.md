@@ -4,5 +4,18 @@
 ### Usage
 
 ```python3
-  python run.py /path/to/content_image.png /path/to/style_image.png
+  python run.py content_image.png style_image.png
 ```
+
+### Example
+#### Content image
+![content](imgs/14917915-medium_jpg.jpeg)
+
+#### Style image
+![style](imgs/wazovski.png)
+
+#### Results
+![r1](imgs/1.png)
+![r2](imgs/2.png)
+![r3](imgs/3.png)
+![r4](imgs/4.png)
