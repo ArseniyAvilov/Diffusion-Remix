@@ -11,13 +11,10 @@
 
 ### From Text Task
 
-Boromir content            | 
-:-------------------------:|
-![content](inms/bor.png)   |
-
-Wazovski style             |
-:-------------------------:|
-![style](imgs/waz.png)     |
+Boromir content            | Wazovski style
+:-------------------------:|:-------------------------:
+![content](imgs/bor.png)   |![style](imgs/waz.png)
+             
 
 Results                    |                           |                           |
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
