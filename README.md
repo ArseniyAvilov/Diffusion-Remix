@@ -16,9 +16,9 @@ Boromir content            | Wazovski style
 ![content](imgs/bor.png)   |![style](imgs/waz.png)
              
 
-Results                    |                           |                           |
+Results1                   | Results2                  | Results3                  | Results4
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-![](imgs/borowaz1.png)     |  ![](imgs/borowaz2.png)   |![](imgs/borowaz3.png)     | ![](imgs/borowaz4.png)
+![b1](imgs/borowaz1.png)   |  ![b2](imgs/borowaz2.png  |![b3](imgs/borowaz3.png)   | ![b4](imgs/borowaz4.png)
 
 #### Content image
 ![content](imgs/14917915-medium_jpg.jpeg)
