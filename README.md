@@ -8,6 +8,17 @@
 ```
 
 ### Example
+
+### From Text Task
+
+Boromir content            | Wazovski style 
+:-------------------------:|:-------------------------:
+![content](inms/bor.png)   |  ![style](imgs/waz.png)
+
+Results                    |                           |                           |
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+![](imgs/borowaz1.png)     |  ![](imgs/borowaz2.png)   |![](imgs/borowaz3.png)     | ![](imgs/borowaz4.png)
+
 #### Content image
 ![content](imgs/14917915-medium_jpg.jpeg)
 
